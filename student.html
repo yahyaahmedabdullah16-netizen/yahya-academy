@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Dashboard</title>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+
+<script src="app.js"></script>
+<script src="ai.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Student Dashboard</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h3>Your Progress</h3>
+<div class="progress-bar">
+<div id="progressFill" class="progress-fill" style="width:0%"></div>
+</div>
+<p id="progressText">0%</p>
+</div>
+
+<div class="card">
+<h3>Book Class</h3>
+<select id="course">
+<option>Qaida</option>
+<option>Qur'an</option>
+<option>Hifdh</option>
+<option>Maqamat</option>
+</select>
+<button onclick="bookClass()">Book</button>
+</div>
+
+<div class="card">
+<h3>Maqamat Training</h3>
+
+<p>Bayati</p>
+<audio controls src="bayati.mp3"></audio>
+
+<p>Hijaz</p>
+<audio controls src="hijaz.mp3"></audio>
+
+<p>Nahawand</p>
+<audio controls src="nahawand.mp3"></audio>
+
+</div>
+
+<div class="card">
+<h3>AI Recitation Feedback</h3>
+<input type="file" id="audioInput">
+<button onclick="analyze()">Analyze</button>
+<p id="result"></p>
+</div>
+
+</div>
+
+</body>
+</html>

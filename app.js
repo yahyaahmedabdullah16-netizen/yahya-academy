@@ -14,8 +14,8 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db = firebase.firestore();
 
-// 🔐 CHANGE THIS TO YOUR EMAIL
-const ADMIN_EMAIL = "youremail@gmail.com";
+
+const ADMIN_EMAIL = "yahyaahmedabdullah16@gmail.com";
 
 // AUTH STATE
 auth.onAuthStateChanged(user => {

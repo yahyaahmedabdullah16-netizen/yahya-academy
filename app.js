@@ -1,4 +1,4 @@
-onst firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyAsbIXG686g4uCi1K0W0exngg7RkPMDZds",
   authDomain: "kultian-8cef4.firebaseapp.com",
   databaseURL: "https://kultian-8cef4-default-rtdb.firebaseio.com",

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Academy</title>
+<title>Admin</title>
 
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
@@ -12,17 +12,17 @@
 
 <body>
 
-<h1>Academy Login</h1>
+<h1>Teacher Dashboard</h1>
 
-<h3>Register</h3>
-<input id="email" placeholder="Email">
-<input id="password" type="password" placeholder="Password">
-<button onclick="register()">Register</button>
+<button onclick="logout()">Logout</button>
 
-<h3>Login</h3>
-<input id="loginEmail" placeholder="Email">
-<input id="loginPassword" type="password" placeholder="Password">
-<button onclick="login()">Login</button>
+<h2>Bookings</h2>
+<div id="bookings"></div>
+
+<h2>Update Student Progress</h2>
+<input id="studentEmail" placeholder="Student email">
+<input id="progressValue" placeholder="Progress %">
+<button onclick="updateProgress()">Update</button>
 
 </body>
 </html>
